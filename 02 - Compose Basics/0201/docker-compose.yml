@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  wordpress:
+    image: wordpress:4.5
+    links:
+      - db
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: example
+    restart: always
+
+  db:
+    image: mariadb
+    environment:
+     - MYSQL_ROOT_PASSWORD=example
