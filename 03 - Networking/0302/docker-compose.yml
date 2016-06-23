@@ -1,0 +1,9 @@
+version: '2'
+services:
+  a:
+    image: tutum/hello-world
+  b:
+    image: tutum/hello-world
+networks:
+  default:
+    driver: bridge
