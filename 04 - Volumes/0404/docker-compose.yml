@@ -1,0 +1,10 @@
+version: '2'
+services:
+  resizer:
+    image: tutum/hello-world
+    volumes:
+      - images:/images:rw
+
+volumes:
+  images:
+    external: true

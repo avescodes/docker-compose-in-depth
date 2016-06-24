@@ -1,0 +1,8 @@
+version: '2'
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d:ro
+    ports:
+      - 80

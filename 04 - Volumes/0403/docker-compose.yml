@@ -1,0 +1,15 @@
+version: '2'
+services:
+  worker:
+    image: tutum/hello-world
+    volumes:
+      - results:/results
+  reporting:
+    image: tutum/hello-world
+    volumes_from:
+      - worker:ro
+
+volumes:
+  results:
+
+
