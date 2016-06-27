@@ -1,0 +1,9 @@
+version: '2'
+services:
+  worker:
+    image: tutum/hello-world
+    command: sh -c 'while true; do echo test; done'
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://<replace with your own endpoint:port combo>"
