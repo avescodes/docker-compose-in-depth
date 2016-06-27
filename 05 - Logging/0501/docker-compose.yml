@@ -1,0 +1,10 @@
+version: '2'
+services:
+  worker:
+    image: tutum/hello-world
+    command: sh -c 'while true; do echo test; done'
+    logging:
+      driver: json-file
+      options:
+        max-file: "5"
+        max-size: "1m"
