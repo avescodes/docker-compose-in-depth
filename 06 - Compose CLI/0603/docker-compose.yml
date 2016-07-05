@@ -1,0 +1,6 @@
+version: '2'
+services:
+  worker:
+    image: tutum/hello-world
+    ports:
+      - 80
