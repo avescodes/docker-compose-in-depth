@@ -1,0 +1,10 @@
+version: '2'
+services:
+  worker:
+    image: tutum/hello-world:${TAG}
+    environment:
+      - FOO
+    env_file:
+      - worker-dev.env
+    ports:
+      - 80
