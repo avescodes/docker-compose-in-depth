@@ -1,0 +1,9 @@
+version: '2'
+services:
+  merge-example:
+    image: tutum/hello-world:latest
+    environment:
+      FOO: 2
+      BAR: 1
+    ports:
+      - 8080:80

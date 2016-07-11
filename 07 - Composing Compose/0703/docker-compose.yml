@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  hello:
+    extends:
+      file: base.yml
+      service: base
+    ports:
+      - 80
+    environment:
+      SERVICE: hello

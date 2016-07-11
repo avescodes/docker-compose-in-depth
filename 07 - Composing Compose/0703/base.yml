@@ -1,0 +1,7 @@
+version: '2'
+services:
+  base:
+    image: tutum/hello-world
+    environment:
+      SERVICE: base
+    # ... other general "base" configuration

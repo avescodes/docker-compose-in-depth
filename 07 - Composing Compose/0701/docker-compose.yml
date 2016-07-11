@@ -1,0 +1,8 @@
+version: '2'
+services:
+  merge-example:
+    image: tutum/hello-world
+    environment:
+      FOO: 1
+    ports:
+      - 80
