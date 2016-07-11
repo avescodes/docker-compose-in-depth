@@ -3,8 +3,8 @@ services:
   worker:
     image: tutum/hello-world:${TAG}
     environment:
-      - FOO
+      - BAR
     env_file:
-      - worker-dev.env
+      - "staging.env"
     ports:
       - 80
